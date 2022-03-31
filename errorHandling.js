@@ -18,3 +18,13 @@ function maxOfTwoNumbers(...nums) {
 }
 
 console.log("max of two numbers: ", maxOfTwoNumbers(14, 7));
+
+//////// check for one character
+function isCharVowel(char) {
+  if (char.length !== 1 || typeof char !== "string") {
+    throw new Error("input exactly one letter");
+  }
+  return "aeiou".includes(char.toLowerCase());
+}
+
+console.log("Is this a vowel: ", isCharVowel("E"));
